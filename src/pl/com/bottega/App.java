@@ -7,7 +7,8 @@ public class App {
 		Input in = new Input();
 		Calc calc = new Calc();
 		Human human = new Human(in.getBirthDateAndTime(), in.getSex(), in.getCondition());
-		calc.calculateMinutes(human.getBirthDate());
+		calc.calculateTotalMinutes(human.getBirthDate());
+		calc.calculateHeartBeatsNewborn(human.getBirthDate());
 		System.out.println(human.toString());
 
 	}
