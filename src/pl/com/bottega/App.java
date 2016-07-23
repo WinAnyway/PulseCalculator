@@ -5,7 +5,7 @@ public class App {
 	public static void main(String[] args) {
 
 		Input in = new Input();
-		Calc calc = new Calc();
+		Calculator calc = new Calculator();
 		Human human = new Human(in.getBirthDateAndTime(), in.getSex(), in.getCondition());
 		long pulseAdult = 0;
 		if (human.getSex().equals("kobieta")) {

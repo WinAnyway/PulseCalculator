@@ -3,7 +3,7 @@ package pl.com.bottega;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
-public class Calc {
+public class Calculator {
 
 	private LocalDateTime now = LocalDateTime.now();
 	private static final int PULSE_NEWBORN = 130;
