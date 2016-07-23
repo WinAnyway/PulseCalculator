@@ -9,7 +9,7 @@ public class Input {
 	Scanner sc = new Scanner(System.in);
 	
 	public LocalDateTime getBirthDateAndTime (){
-		System.out.println("Please enter date and time of birth(yyyy-mm-dd hh:mm)");
+		System.out.println("Wpisz datê urodzenia(yyyy-mm-dd hh:mm)");
 		String input = sc.nextLine();
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 		LocalDateTime dateTime = LocalDateTime.parse(input, formatter);
@@ -17,14 +17,14 @@ public class Input {
 	}
 	
 	public String getSex (){
-		System.out.println("Please enter sex(male/female)");
+		System.out.println("Wpisz p³eæ(kobieta/mê¿czyzna)");
 		String sex = sc.next().toLowerCase();
 		return sex;
 	}
 	
 	public String getCondition (){
-		System.out.println("Please enter condition(good/bad/very good)");
-		String condition = sc.next().toLowerCase();
+		System.out.println("Wpisz kondycjê(wyczynowa/œwietna/dobra/ponadprzeciêtna/przeciêtna/s³aba/z³a)");
+		String condition = sc.next().toLowerCase();		
 		return condition;
 	}
 }
