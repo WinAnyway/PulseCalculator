@@ -7,12 +7,14 @@ public class Human {
 	private LocalDateTime birthDate;
 	private String sex;
 	private String condition;
+	private Long pulseAdult;
 
-	public Human(LocalDateTime birthDate, String sex, String condition) {
+	public Human(LocalDateTime birthDate, String sex, String condition, Long pulseAdult) {
 		super();
 		this.birthDate = birthDate;
 		this.sex = sex;
 		this.condition = condition;
+		this.pulseAdult = pulseAdult;
 
 	}
 
@@ -38,6 +40,14 @@ public class Human {
 
 	public void setCondition(String condition) {
 		this.condition = condition;
+	}
+
+	public Long getPulseAdult() {
+		return pulseAdult;
+	}
+
+	public void setPulseAdult(Long pulseAdult) {
+		this.pulseAdult = pulseAdult;
 	}
 
 }
