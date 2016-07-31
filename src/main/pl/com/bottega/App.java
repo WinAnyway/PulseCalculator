@@ -1,5 +1,9 @@
 package pl.com.bottega;
 
+import pl.com.bottega.Calculator;
+import pl.com.bottega.Human;
+import pl.com.bottega.Input;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -62,6 +66,7 @@ public class App {
 				pulseAdult = 70;
 				break;
 			}
+
 		}
 		long heartBeatsTotal = calc.calculateHeartBeats(human.getBirthDate(), pulseAdult);
 		System.out.println("Twoje serce bi³o w ci¹gu twojego ¿ycia oko³o " + heartBeatsTotal + " razy");
