@@ -11,8 +11,7 @@ public class App {
 		String sex = in.getSex();
 		String condition = in.getCondition();
 		Calculator calc = new Calculator();
-		AverageAdultPulseCalculator aapc = new AverageAdultPulseCalculator();
-		Human human = new Human(birthDate, sex, condition, aapc.calculateAverageAdultPulse(sex, condition));
+		Human human = new Human(birthDate, sex, condition, calc.calculateAverageAdultPulse(sex, condition));
 		long heartBeatsTotal = calc.calculateHeartBeats(human.getBirthDate(), human.getPulseAdult());
 		String heartBeatsInThousands = String.format("%,d", heartBeatsTotal);
 		if (heartBeatsTotal < 0) {
