@@ -15,8 +15,11 @@ public class App {
 		Human human = new Human(birthDate, sex, condition, aapc.calculateAverageAdultPulse(sex, condition));
 		long heartBeatsTotal = calc.calculateHeartBeats(human.getBirthDate(), human.getPulseAdult());
 		String heartBeatsInThousands = String.format("%,d", heartBeatsTotal);
-		System.out.println("Twoje serce bi³o w ci¹gu twojego ¿ycia oko³o " + heartBeatsInThousands + " razy");
-
+		if (heartBeatsTotal < 0) {
+			System.out.println("Na pewno nie macie w tej przysz³oœci lepszych narzêdzi do obliczania pulsu?");
+		} else {
+			System.out.println("Twoje serce bi³o w ci¹gu twojego ¿ycia oko³o " + heartBeatsInThousands + " razy");
+		}
 	}
 
 }
