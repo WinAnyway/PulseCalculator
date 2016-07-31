@@ -14,7 +14,8 @@ public class App {
 		AverageAdultPulseCalculator aapc = new AverageAdultPulseCalculator();
 		Human human = new Human(birthDate, sex, condition, aapc.calculateAverageAdultPulse(sex, condition));
 		long heartBeatsTotal = calc.calculateHeartBeats(human.getBirthDate(), human.getPulseAdult());
-		System.out.println("Twoje serce bi這 w ci鉚u twojego 篡cia oko這 " + heartBeatsTotal + " razy");
+		String heartBeatsInThousands = String.format("%,d", heartBeatsTotal);
+		System.out.println("Twoje serce bi這 w ci鉚u twojego 篡cia oko這 " + heartBeatsInThousands + " razy");
 
 	}
 

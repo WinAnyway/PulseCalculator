@@ -1,7 +1,7 @@
 package pl.com.bottega;
 
 public class AverageAdultPulseCalculator {
-
+	//Calculates average pulse of Adulthood
 	public Long calculateAverageAdultPulse(String sex, String condition) {
 		long pulseAdult = 0;
 		if (sex.equals("kobieta")) {
