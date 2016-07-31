@@ -2,7 +2,7 @@ package pl.com.bottega;
 
 public class AverageAdultPulseCalculator {
 
-	public Long specifyAverageAdultPulse(String sex, String condition) {
+	public Long calculateAverageAdultPulse(String sex, String condition) {
 		long pulseAdult = 0;
 		if (sex.equals("kobieta")) {
 			switch (condition) {
